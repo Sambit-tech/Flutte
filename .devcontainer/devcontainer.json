@@ -1,0 +1,15 @@
+{
+  "name": "Flutter Cloud Workspace",
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "dart-code.flutter",
+        "dart-code.dart-code"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "flutter doctor && flutter config --enable-web"
+}
